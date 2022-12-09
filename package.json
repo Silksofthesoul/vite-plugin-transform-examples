@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-transform-examples",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "setup:prod": "npm install",
