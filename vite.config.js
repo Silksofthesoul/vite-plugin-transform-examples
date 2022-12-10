@@ -33,12 +33,13 @@ const alias = {
 };
 
 const replace = {
-  'rrr': 'Hello Friends!',
-  'replaceme': 'abc123'
+  'replace-example': 'Hello Friends!',
+  'replace-me': 'abc123'
 };
 
 const exclude = ['node_modules' ];
 const replaceFiles = [
+  resolve(join(__dirname, './dist/data.json')),
   resolve(join(__dirname, './dist/data.xml')),
   resolve(join(__dirname, './dist/data-notimported.xml')),
 ];
@@ -53,6 +54,7 @@ export default ({ mode }) => {
       transformPlugin({ 
         tStart: '{%', tEnd:   '%}',
         replace,
+        alias,
         exclude,
         replaceFiles
       }),

@@ -1,0 +1,4 @@
+[
+  { "name": "J", "path": "{%resolve-alias key=\"@root\" path=\"user/jjjj\"%}" },
+  { "name": "{%replace-me%}", "path": "{%resolve-alias key=\"@root\" path=\"user/bbbb\"%}" }
+]
